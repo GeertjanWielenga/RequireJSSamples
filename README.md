@@ -1,6 +1,6 @@
-# RequireJSSamples
+# RequireJS Samples
 Samples that illustrate the purpose of Require.js.
 
-SimpleSales
+   * SimpleSales
 
-ModularSales
+   * ModularSales
