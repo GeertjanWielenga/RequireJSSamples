@@ -1,13 +1,13 @@
 {
-  "name": "ModularSales",
-  "version": "1.0.0",
-  "main": "path/to/main.css",
-  "ignore": [
-    ".jshintrc",
-    "**/*.txt"
-  ],
-  "dependencies": {
-    "require": "*"
-  },
-  "devDependencies": {}
+    "name": "ModularSales",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+        "requirejs": "2.1.17"
+    },
+    "devDependencies": {}
 }
