@@ -7,7 +7,6 @@
     "**/*.txt"
   ],
   "dependencies": {
-    "knockoutjs": "3.3.0",
     "require": "*"
   },
   "devDependencies": {}
