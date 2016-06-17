@@ -6,6 +6,7 @@
  */
 import { verifyName } from './authenticator';
 import { sendThing } from './thing';
+import { sendApology } from './thing';
 
 export function buyThing(name) {
     console.log(name + " is trying to buy");
