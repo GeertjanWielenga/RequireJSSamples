@@ -8,9 +8,25 @@
         <script data-main="js/main"
                 src="js/libraries/requirejs/require.js"
                 type="text/javascript"></script>
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <!--https://github.com/edgardleal/require-vuejs-->
-    <div id="app">
-        <my-component></my-component>
-    </div>
+    <!--https://vuejs.org/v2/examples/grid-component.html-->
+    <header id="header">
+        <my-header-component></my-header-component>
+    </header>
+    <section id="grid">
+        <form id="search">
+            Search <input name="query" v-model="searchQuery">
+        </form>
+        <br/>
+        <demo-grid
+            :data="gridData"
+            :columns="gridColumns"
+            :filter-key="searchQuery">
+        </demo-grid>
+    </section>
+    <footer id="footer">
+        <my-footer-component></my-footer-component>
+    </footer>
 </html>
