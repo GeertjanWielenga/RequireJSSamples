@@ -1,6 +1,6 @@
 <template>
   <div>
-  {{text}}
+    <h2>{{text}}</h2>
   <hr>
   </div>
 </template>
