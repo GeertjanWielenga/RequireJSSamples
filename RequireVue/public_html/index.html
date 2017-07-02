@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script data-main="js/main"
                 src="js/libraries/requirejs/require.js"
-                type="text/javascript"></script>
+        type="text/javascript"></script>
         <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <!--https://github.com/edgardleal/require-vuejs-->
@@ -15,6 +15,13 @@
     <header id="header">
         <my-header-component></my-header-component>
     </header>
+    <section id="refs">
+        <router-link to='/'>Dashboard</router-link>
+        <router-link to='/customers'>Customers</router-link>
+        <hr>
+        <router-view></router-view>
+        <hr>
+    </section>
     <section id="grid">
         <form id="search">
             Search <input name="query" v-model="searchQuery">

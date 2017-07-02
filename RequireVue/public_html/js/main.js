@@ -1,18 +1,29 @@
 requirejs.config({
     paths: {
         "Vue": "libraries/vue/dist/vue",
-        "vue": "libraries/require-vuejs/dist/require-vuejs"
+        "vue": "libraries/require-vuejs/dist/require-vuejs",
+        "vue_router": "libraries/vue-router/dist/vue-router.min"
     },
     shim: {
-        "Vue": {"exports": "Vue"}
+        "Vue": {"exports": "Vue"},
+		"vue_router": {"exports": "VueRouter"}
     }
 });
 // to use component in your code with RequireJS: 
 // put a reference to your component file with or without extencion after 'vue!' 
-require(["Vue", 
-	"vue!vue-components/my-header-component", 
-	"vue!vue-components/my-grid-component", 
-	"vue!vue-components/my-footer-component"], function(Vue){
+require(['Vue', 'vue_router', 'routes',
+	'vue!vue-components/my-header-component', 
+	'vue!vue-components/my-grid-component', 
+	'vue!vue-components/my-footer-component'], function(Vue, VueRouter, AppRoutes){
+  Vue.use(VueRouter);	
+  var router = new VueRouter({
+    mode: 'hash',
+    routes: AppRoutes
+  });
+  new Vue({
+    el: '#refs',
+    router: router
+  });
   new Vue({
 	  el: "#header"
   });

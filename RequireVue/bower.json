@@ -9,7 +9,8 @@
     "dependencies": {
         "requirejs": "2.1.17",
         "vue": "latest",
-        "require-vuejs": "latest"
+        "require-vuejs": "latest",
+        "vue-router": "latest"
     },
     "devDependencies": {}
 }
